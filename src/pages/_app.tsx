@@ -30,7 +30,7 @@ const client = createClient({
       new CoinbaseWalletConnector({
         chains,
         options: {
-          appName: 'wagmi',
+          appName: 'I own this wallet',
           chainId: chain.id,
           jsonRpcUrl: rpcUrl,
         },
@@ -64,7 +64,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <Provider client={client}>
       <NextHead>
-        <title>wagmi</title>
+        <title>I own this wallet</title>
       </NextHead>
 
       <Component {...pageProps} />
