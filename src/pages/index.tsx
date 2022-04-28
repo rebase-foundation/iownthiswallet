@@ -47,9 +47,9 @@ function Page() {
 
         {isMounted && account && (
           <>
-            <button 
-            className='mx-auto'
-            onClick={onSignMessage}
+            <button
+              className='mx-auto'
+              onClick={onSignMessage}
             >
               Sign Message
             </button>
@@ -58,7 +58,7 @@ function Page() {
 
         {isMounted && account && isSuccess && (
           <>
-            <a href={"mailto:"+email+"?subject=I own this wallet&body=Wallet Address: "+account.address+" Signed Message: "+data}>
+            <a href={"mailto:" + email + "?subject=I own this wallet&body=Wallet Address: " + account.address + " Signed Message: " + data}>
               <button>Send Message</button>
             </a>
           </>
