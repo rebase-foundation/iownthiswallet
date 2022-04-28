@@ -10,7 +10,7 @@ function Page() {
   const email = router.query.email;
   const isMounted = useIsMounted();
   const { data, isError, isLoading, isSuccess, signMessage } = useSignMessage({
-    message: 'gm wagmi frens',
+    message: 'I own this wallet',
   })
   const { data: account } = useAccount();
   const [message, setMessage] = React.useState('');
